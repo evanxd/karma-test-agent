@@ -7,7 +7,7 @@
     "karma-plugin",
     "karma-framework"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./index.js",
   "license": "MIT",
   "homepage": "https://github.com/evanxd/karma-test-agent",
