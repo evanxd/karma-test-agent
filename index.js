@@ -6,6 +6,7 @@ var createPattern = function(path) {
 
 var framework = function(files) {
   files.unshift(createPattern(__dirname + '/lib/require.js'));
+  files.unshift(createPattern(__dirname + '/lib/mocks_helper.js'));
 };
 
 framework.$inject = ['config.files'];
