@@ -7,7 +7,7 @@
     "karma-plugin",
     "karma-framework"
   ],
-  "version": "0.0.3",
+  "version": "0.0.2",
   "main": "./index.js",
   "license": "MIT",
   "homepage": "https://github.com/evanxd/karma-test-agent",
@@ -20,5 +20,12 @@
   },
   "peerDependencies": {
     "karma": "~0.6 || ~0.8 || ~0.10 || ~0.12"
-  }
+  },
+  "readme": "karma-test-agent\n================\n\nA Karma framwork plugin lets Karma runner have capbility to run Gaia unit tests.\n",
+  "readmeFilename": "README.md",
+  "gitHead": "79e6aadc7c3681009aa17b338c0c8f301bce760e",
+  "_id": "karma-test-agent@0.0.2",
+  "scripts": {},
+  "_shasum": "d1d5f141a54ea5bc7502c46609fc72ffb2a49ceb",
+  "_from": "karma-test-agent@*"
 }

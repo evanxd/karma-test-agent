@@ -1,0 +1,100 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/opt/local/bin/npm', 'publish' ]
+2 info using npm@2.0.0-alpha-5
+3 info using node@v0.10.20
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add spec="." args=[".",null]
+7 verbose cache add local package /Users/veck/gaia/node_modules/karma-test-agent
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/veck/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/veck/.npm/karma-test-agent/0.0.2/package.tgz', '.' ]
+11 verbose tarball /Users/veck/.npm/karma-test-agent/0.0.2/package.tgz
+12 verbose folder .
+13 info prepublish karma-test-agent@0.0.2
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/veck/.npm/1f1177db-tar.lock
+16 silly lockFile 22eef8cb-rma-test-agent-0-0-2-package-tgz tar:///Users/veck/.npm/karma-test-agent/0.0.2/package.tgz
+17 verbose lock tar:///Users/veck/.npm/karma-test-agent/0.0.2/package.tgz /Users/veck/.npm/22eef8cb-rma-test-agent-0-0-2-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 22eef8cb-rma-test-agent-0-0-2-package-tgz tar:///Users/veck/.npm/karma-test-agent/0.0.2/package.tgz
+21 silly lockFile 22eef8cb-rma-test-agent-0-0-2-package-tgz tar:///Users/veck/.npm/karma-test-agent/0.0.2/package.tgz
+22 silly lockFile 68f6c551-m-karma-test-agent-0-0-2-package /Users/veck/.npm/karma-test-agent/0.0.2/package
+23 verbose lock /Users/veck/.npm/karma-test-agent/0.0.2/package /Users/veck/.npm/68f6c551-m-karma-test-agent-0-0-2-package.lock
+24 silly lockFile 68f6c551-m-karma-test-agent-0-0-2-package /Users/veck/.npm/karma-test-agent/0.0.2/package
+25 silly lockFile 68f6c551-m-karma-test-agent-0-0-2-package /Users/veck/.npm/karma-test-agent/0.0.2/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'karma-test-agent',
+28 silly publish   description: 'A Karma framwork plugin lets Karma runner have capbility to run Gaia unit tests.',
+28 silly publish   keywords: [ 'mozilla', 'karma', 'karma-plugin', 'karma-framework' ],
+28 silly publish   version: '0.0.2',
+28 silly publish   main: './index.js',
+28 silly publish   license: 'MIT',
+28 silly publish   homepage: 'https://github.com/evanxd/karma-test-agent',
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/evanxd/karma-test-agent.git' },
+28 silly publish   bugs: { url: 'https://github.com/evanxd/karma-test-agent/issues' },
+28 silly publish   peerDependencies: { karma: '~0.6 || ~0.8 || ~0.10 || ~0.12' },
+28 silly publish   readme: 'karma-test-agent\n================\n\nA Karma framwork plugin lets Karma runner have capbility to run Gaia unit tests.\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: '79e6aadc7c3681009aa17b338c0c8f301bce760e',
+28 silly publish   _id: 'karma-test-agent@0.0.2',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: 'ac10241d5565eefb1388d3af655fe4fa7bbe026a',
+28 silly publish   _from: '.' }
+29 verbose mapToRegistry name karma-test-agent
+30 verbose mapToRegistry uri https://registry.npmjs.org/karma-test-agent
+31 verbose publish registryBase https://registry.npmjs.org/
+32 verbose request where is /karma-test-agent
+33 verbose request registry https://registry.npmjs.org/
+34 verbose request id 674ccb8e53a598fa
+35 verbose request url raw /karma-test-agent
+36 verbose request url resolving [ 'https://registry.npmjs.org/', './karma-test-agent' ]
+37 verbose request url resolved https://registry.npmjs.org/karma-test-agent
+38 verbose request where is https://registry.npmjs.org/karma-test-agent
+39 verbose request setting basic auth
+40 info trying registry request attempt 1 at 12:20:05
+41 http PUT https://registry.npmjs.org/karma-test-agent
+42 http 403 https://registry.npmjs.org/karma-test-agent
+43 verbose headers { date: 'Fri, 29 Aug 2014 04:20:08 GMT',
+43 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+43 verbose headers   'content-type': 'application/json',
+43 verbose headers   'cache-control': 'max-age=60',
+43 verbose headers   'content-length': '288',
+43 verbose headers   'accept-ranges': 'bytes',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   'x-served-by': 'cache-hk91-HKG',
+43 verbose headers   'x-cache': 'MISS',
+43 verbose headers   'x-cache-hits': '0',
+43 verbose headers   'x-timer': 'S1409286007.681691,VS0,VE701',
+43 verbose headers   'keep-alive': 'timeout=10, max=50',
+43 verbose headers   connection: 'Keep-Alive' }
+44 error publish Failed PUT 403
+45 error Error: forbidden user: fbukevin not authorized to modify karma-test-agent
+45 error Changed: dist-tags.latest "0.0.1" -> "0.0.2"
+45 error Added: versions.0.0.2
+45 error Changed: time.modified "2014-08-08T06:31:38.696Z" -> "2014-08-29T04:18:30.408Z"
+45 error Added: time.0.0.2
+45 error Added: _attachments: karma-test-agent
+45 error     at RegClient.<anonymous> (/opt/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:313:14)
+45 error     at Request._callback (/opt/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:251:65)
+45 error     at Request.self.callback (/opt/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+45 error     at Request.EventEmitter.emit (events.js:98:17)
+45 error     at Request.<anonymous> (/opt/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+45 error     at Request.EventEmitter.emit (events.js:117:20)
+45 error     at IncomingMessage.<anonymous> (/opt/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+45 error     at IncomingMessage.EventEmitter.emit (events.js:117:20)
+45 error     at _stream_readable.js:920:16
+45 error     at process._tickCallback (node.js:415:13)
+46 error If you need help, you may report this *entire* log,
+46 error including the npm and node versions, at:
+46 error     <http://github.com/npm/npm/issues>
+47 error System Darwin 13.3.0
+48 error command "node" "/opt/local/bin/npm" "publish"
+49 error cwd /Users/veck/gaia/node_modules/karma-test-agent
+50 error node -v v0.10.20
+51 error npm -v 2.0.0-alpha-5
+52 verbose exit [ 1, true ]
