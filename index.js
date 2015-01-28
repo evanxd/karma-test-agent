@@ -7,10 +7,10 @@ var createPattern = function(path) {
 
 var framework = function(files) {
   var setups =	checkSetup();
-  files.unshift(createPattern(__dirname + '/lib/require.js'));
   for(setup in setups){
   	files.unshift(createPattern(setups[setup]));
   }
+  files.unshift(createPattern(__dirname + '/lib/require.js'));
   //files.unshift(createPattern(__dirname + '/lib/mocks_helper.js'));
   //files.unshift(createPattern(__dirname + '/lib/test_agent.js'));
 };
